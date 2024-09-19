@@ -13,6 +13,16 @@ config = {
         "HOST": "apps.{{ LMS_HOST }}",
         "COMMON_VERSION": "{{ OPENEDX_COMMON_VERSION }}",
         "CADDY_DOCKER_IMAGE": "{{ DOCKER_IMAGE_CADDY }}",
+        # S3 MFE Staticfiles
+        # ----------------------
+        # The bucket name to use for S3 static files
+        "STATIC_FILES_BUCKET_NAME": "SET_ME_PLEASE",
+        # AWS S3 settings
+        "AWS_STATIC_FILES_ACCESS_KEY_ID": "SET_ME_PLEASE",
+        "AWS_STATIC_FILES_SECRET_KEY": "SET_ME_PLEASE",
+        "DEPLOY_S3": False,
+        # MFE App Settings
+        # ----------------------
         "ACCOUNT_MFE_APP": {
             "name": "account",
             "repository": "https://github.com/edx/frontend-app-account",
